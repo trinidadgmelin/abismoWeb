@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El abismo de la visibilidad</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- THREE.JS -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+    }
+    </script>
+
+    <!-- JAVASCRIPT -->
+    <script type="module" src="main.js"></script>
+
+</head>
+
+
+<body>
+  <main class="page-layout">
+
+    <!-- COLUMNA IZQUIERDA: INFORMACIÓN ESTÁTICA -->
+    <aside class="sidebar">
+
+      <header class="project-header">
+        <h1>El abismo de la<br><em>visibilidad</em></h1>
+      </header>
+
+      <section class="project-info">
+        <h2>Organismo especulativo para una economía de la atención</h2>
+
+        <p>
+          Entre datos, pantallas y miradas ajenas, construimos una imagen de
+          quiénes somos en un mundo que nos obliga a mostrarnos para existir.
+        </p>
+
+        <p>
+          <strong>El abismo de la visibilidad</strong> invita a reflexionar
+          sobre cómo nos mostramos, cómo nos observan y qué significa
+          nuestra exposición en el mundo digital.
+        </p>
+      </section>
+
+      <nav class="project-links">
+        <a href="#">DOCUMENTACIÓN</a>
+        <a href="#">MUNDO VIRTUAL</a>
+      </nav>
+
+      <footer class="sidebar-footer">
+        <!-- Logos e información de créditos -->
+        <img src="assets/Créditos.svg" alt="créditos">
+      </footer>
+
+    </aside>
+
+
+    <!-- COLUMNA DERECHA: ESCENARIO INTERACTIVO -->
+    <section class="interactive-area">
+
+      <div id="three-container"></div>
+
+      <nav class="navigation">
+        <button class="category redes">REDES</button>
+        <button class="category escultura">ESCULTURA</button>
+        <button class="category sonido">SONIDO</button>
+        <button class="category selfies">SELFIES</button>
+        <button class="category registro">REGISTRO</button>
+        <button class="category videomapping">VIDEOMAPPING</button>
+        <button class="category web">WEB</button>
+        <button class="category diseno">DISEÑO</button>
+      </nav>
+
+      <div class="cursor-light"></div>
+
+    </section>
+
+  </main>
+</body>
+
+</html>
