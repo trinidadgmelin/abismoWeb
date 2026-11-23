@@ -1,6 +1,6 @@
 html, body {
     background-color: #202020;
-    background-image: url("/assets/background.png");
+    background-image: url("assets/background.png");
     font-family: "Helvetica Neue Custom", sans-serif;
     font-weight: 500; /* Usa Medium por defecto para todo el texto */
     width: 100%;
@@ -10,7 +10,7 @@ html, body {
 /* 1. Versión Medium (peso 500) */
 @font-face {
   font-family: "Helvetica Neue Custom";
-  src: url("/assets/Helvetica/HelveticaNeueLTStd-Md-BF6a4c33b821273.otf") format("opentype");
+  src: url("assets/Helvetica/HelveticaNeueLTStd-Md-BF6a4c33b821273.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@ html, body {
 /* 2. Versión Bold (peso 700) */
 @font-face {
   font-family: "Helvetica Neue Custom";
-  src: url("/assets/Helvetica/HelveticaNeueLTStd-Bd-BF6a4c33b64bd77.otf") format("opentype");
+  src: url("assets/Helvetica/HelveticaNeueLTStd-Bd-BF6a4c33b64bd77.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
