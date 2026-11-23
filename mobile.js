@@ -85,7 +85,7 @@ loader.load(
     const size = box.getSize(new THREE.Vector3());
     const maxSize = Math.max(size.x, size.y, size.z);
 
-    fish.scale.setScalar(2 / maxSize);
+    fish.scale.setScalar(1.2 / maxSize);
 
     scene.add(fish);
 

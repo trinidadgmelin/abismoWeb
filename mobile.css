@@ -1,8 +1,22 @@
-body {
-    background-image: url("/assets/background.png");
-    font-family: "Helvetica Neue Custom", sans-serif;
-    font-weight: 500; /* Usa Medium por defecto para todo el texto */
+html, body {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background-color: #202020;
+  background-image: url("/assets/background.png");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto;
+
+  font-family: "Helvetica Neue Custom", sans-serif;
+  font-weight: 500; /* Usa Medium por defecto para todo el texto */
 }
+
+
 /* 1. Versión Medium (peso 500) */
 @font-face {
   font-family: "Helvetica Neue Custom";
@@ -25,14 +39,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  min-height: 100%;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .page-layout {
@@ -107,7 +113,7 @@ html, body {
 .interactive-area {
   position: relative;
   width: 100%;
-  height: 150vh;
+  height: 180vh;
   overflow: visible;
   z-index: 2;
 }
@@ -167,44 +173,70 @@ html, body {
 
 /* POSICIÓN DE LAS CATEGORÍAS */
 
-.redes {
-  top: 28%;
-  left: 12%;
+
+/* RECORRIDO VERTICAL DE CATEGORÍAS */
+
+.navigation {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
 }
+
+.category {
+  position: absolute;
+  pointer-events: auto;
+  background: none;
+  border: none;
+  color: #030EEF;
+  font-size: 1.1rem;
+  font-family: "Helvetica Neue Custom", sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* POSICIONES MOBILE */
 
 .escultura {
-  top: 20%;
-  left: 48%;
-}
-
-.sonido {
-  top: 28%;
-  right: 18%;
-}
-
-.selfies {
-  top: 49%;
-  right: 7%;
-}
-
-.registro {
-  bottom: 22%;
-  right: 18%;
-}
-
-.videomapping {
-  bottom: 16%;
-  left: 45%;
+  top: 5%;
+  left: 27%;
 }
 
 .web {
-  bottom: 19%;
-  left: 18%;
+  top: 25%;
+  left: 15%;
+}
+
+.registro {
+  top: 39%;
+  right: 17%;
+}
+
+.redes {
+  top: 57%;
+  left: 20%;
+}
+
+.selfies {
+  top: 76%;
+  right: 16%;
+}
+
+.sonido {
+  top: 91%;
+  left: 15%;
+}
+
+.videomapping {
+  top: 105%;
+  right: 12%;
 }
 
 .diseno {
-  top: 49%;
-  left: 5%;
+  top: 119%;
+  left: 25%;
 }
 
 .cursor-light {
