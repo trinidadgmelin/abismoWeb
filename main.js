@@ -128,6 +128,15 @@ window.addEventListener('mousemove', (event) => {
   mouse.x = (x / rect.width) * 2 - 1;
   mouse.y = -(y / rect.height) * 2 + 1;
 
+  // Distancia del cursor al borde izquierdo
+  const fadeDistance = 150;
+
+  // Calcular opacidad según la distancia
+  const opacity = Math.min(x / fadeDistance, 1);
+
+  // Aplicar opacidad progresiva
+  light.style.opacity = opacity;
+
 });
 
 

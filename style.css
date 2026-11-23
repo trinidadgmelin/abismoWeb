@@ -1,5 +1,7 @@
 body {
     background-image: url("/assets/background.png");
+    font-family: "Helvetica Neue Custom", sans-serif;
+    font-weight: 500; /* Usa Medium por defecto para todo el texto */
 }
 /* 1. Versión Medium (peso 500) */
 @font-face {
@@ -17,11 +19,6 @@ body {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-}
-
-body {
-  font-family: "Helvetica Neue Custom", sans-serif;
-  font-weight: 500; /* Usa Medium por defecto para todo el texto */
 }
 
 * {
@@ -66,16 +63,10 @@ html, body {
 
 .project-info {
   margin-top: 45px;
-  max-width: 300px;
-}
-
-.project-info h2 {
-  font-size: 0.85rem;
-  margin-bottom: 18px;
+  max-width: 500px;
 }
 
 .project-info p {
-  font-size: 0.75rem;
   line-height: 1.5;
   margin-bottom: 18px;
 }
@@ -206,12 +197,12 @@ html, body {
   position: absolute;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 80%;
   background: radial-gradient(
     circle,
     rgba(255,255,255,0.35) 0%,
-    rgba(255,255,255,0.08) 40%,
-    transparent 80%
+    rgba(255, 208, 0, 0.08) 50%,
+    transparent 70%
   );
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -237,5 +228,58 @@ html, body {
     0 0 8px #D9D9D9,
     0 0 20px #D9D9D9;
   transform: scale(1.1);
+}
+
+h1 {
+    color: #fafafa;
+    margin-bottom: 0px;
+    font-family: "Helvetica Neue Custom", sans-serif;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #fafafa;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    font-family: "Helvetica Neue Custom", sans-serif;
+    font-size: 16px;
+}
+
+.botones {
+    margin: 10px 0px;
+}
+
+.docuBoton, .webBoton {
+    background-color: #030EEF;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-align: center;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Helvetica Neue Custom", sans-serif;
+    line-height: 1.8;
+    cursor: pointer;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.docuBoton:hover, .webBoton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.55);
+  background-color: #2634ff;
+}
+
+.webBoton {
+    margin-bottom: 0px;
+}
+
+.titulo {
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+   margin-bottom: 0px;
+   line-height: 1.5;
 }
 
