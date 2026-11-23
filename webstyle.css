@@ -58,3 +58,45 @@ body {
   font-weight: bold;
   margin-bottom: 15px;
 }
+
+footer {
+  align-items: center;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-principal {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .caja-titulo {
+    margin-left: -140px;
+    padding-left: 0px;
+    justify-content: left;
+  }
+
+  .columna-contenido {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .caja-carrusel {
+    height: auto;
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+
+  .imagen-carrusel {
+    height: auto;
+    width: 100%;
+  }
+
+  .imgFooter {
+    width: 75%;
+    height: auto;
+  }
+}
