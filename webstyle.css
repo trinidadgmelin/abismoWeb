@@ -19,22 +19,13 @@ body {
 
 .caja-titulo {
   flex-shrink: 0;
-  width: 350px;
-  height: 210px;
-  margin-left: -100px;
+  width: auto;
+  height: auto;
+  margin-left: -150px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-left: 150px;
-  border-radius: 50%;
-  background: radial-gradient(circle, white 25%, transparent 70%);
-}
-
-.titulo-web {
-  margin: 0;
-  color: #3D57D0;
-  font-size: 62px;
-  font-weight: bold;
 }
 
 .columna-contenido {
