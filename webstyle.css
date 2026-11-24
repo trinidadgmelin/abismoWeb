@@ -1,9 +1,27 @@
+/* 1. Versión Medium (peso 500) */
+@font-face {
+  font-family: "Helvetica Neue Custom";
+  src: url("assets/Helvetica/HelveticaNeueLTStd-Md-BF6a4c33b821273.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Versión Bold (peso 700) */
+@font-face {
+  font-family: "Helvetica Neue Custom";
+  src: url("assets/Helvetica/HelveticaNeueLTStd-Bd-BF6a4c33b64bd77.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   background-image: url("/assets/background.png");
   background-size: cover;
   overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue Custom", sans-serif;
 }
 
 .contenedor-principal {
